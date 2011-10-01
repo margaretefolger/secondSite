@@ -10,5 +10,4 @@ class PagesController < ApplicationController
   def whoami
     @title = "who am I"
   end
-
 end

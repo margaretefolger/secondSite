@@ -1,12 +1,14 @@
 SecondSite::Application.routes.draw do
-  get "userinos/new"
+  resources :milks
+  match '/showmethemilk', :to => 'milks#showmethemilk'
 
+#  get "milks/showmethemilk"
 #  get "pages/rootpage"
 #  get "pages/talktome"
 #  get "pages/whoami"
 
   # das darf spaeter weg
-  get "userinos/new"
+#  get "userinos/new"
 
   root :to => 'pages#rootpage'
   match '/newuserino', :to => 'userinos#new'
