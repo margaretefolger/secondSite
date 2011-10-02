@@ -1,6 +1,5 @@
 SecondSite::Application.routes.draw do
-  resources :milks
-  match '/showmethemilk', :to => 'milks#showmethemilk'
+  resources :userinos
 
 #  get "milks/showmethemilk"
 #  get "pages/rootpage"
@@ -11,9 +10,12 @@ SecondSite::Application.routes.draw do
 #  get "userinos/new"
 
   root :to => 'pages#rootpage'
-  match '/newuserino', :to => 'userinos#new'
-  match '/rootpage', :to => 'pages#rootpage'
-  match '/talktome',   :to => 'pages#talktome'
-  match '/whoami',    :to => 'pages#whoami'
+  match '/newuserino',    :to => 'userinos#new'
+  match '/rootpage',      :to => 'pages#rootpage'
+  match '/talktome',      :to => 'pages#talktome'
+  match '/whoami',        :to => 'pages#whoami'
+
+  resources :milks
+  match '/showmethemilk/:id', :to => 'milks#showmethemilk'
 
 end

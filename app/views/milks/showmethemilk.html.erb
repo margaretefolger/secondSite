@@ -1,3 +1,15 @@
-<h1>Milks#showmethemilk</h1>
-<p><%= @showmilk.productname  %></p>
-<p><%= @useroni.namerino %></p>
+<h1>Show me the Milk.</h1>
+<p><%= @showmilk.productname  %>! Would you like to have it, <%= @useroni.namerino %>?</p>
+<svg width="600" height="200" viewBox="0 0 600 200" preserveAspectRatio="xMinYMin slice" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs id="defs3371" />
+ <g id="layer1"  transform="translate(0,0)">
+       <rect width="160" height="40" x="20" y="10" id="cupUpperpart" class="<%= @showmilk.flavor  %>" />
+       <path d="M 30,50 170,50 150,180 50,180 z" id="cupLowerpart"
+       style="fill:#eeeeee;stroke:#000000;stroke-width:0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       <rect x ="90" y="<%= 180 - @showmilk.price  %>" height="<%= @showmilk.price  %>" width="20" id="prodrect" class="<%= @showmilk.flavor  %>"> </rect>
+       <text class="productname" x="24" y="28" id="productname"><%= @showmilk.productname  %></text>
+       <text class="milktype" x="24" y="44" id="milktype"><%= @showmilk.flavor  %> flavor <%= @showmilk.milktype  %></text>
+       <text class="price" x="90" y="<%= 178 - @showmilk.price  %>" id="productname"><%= @showmilk.price  %> cent</text>
+       <path d="M 0 180 L 600 180" class="outline"></path>
+  </g>
+</svg>

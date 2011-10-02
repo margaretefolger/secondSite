@@ -115,3 +115,13 @@ footer {
 footer nav {
   float: none;
 }
+path.outline { stroke-width:0.8;stroke:#000000;stroke-opacity:1.0 }
+text.price { font-family:'Arial';font-size:11px;font-style:normal;font-weight:normal;fill:#000000 }
+text.milktype  { font-family:'Arial';font-size:11px;font-style:normal;font-weight:normal;fill:#000000 }
+text.productname  { font-family:'Arial';font-size:14px;font-style:bold;font-weight:bold;fill:#000000 }
+text.micro  { font-family:'Arial';font-size:10px;font-style:normal;font-weight:normal;fill:#000000 }
+rect.Vanilla { fill:#ffeeac;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0px }
+rect.Banana { fill:#fff088;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0px }
+rect.Chocolate { fill:#d38d5f;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0px }
+rect.Strawberry { fill:#ffaaaa;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0px }
+rect.Price { fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0px }
